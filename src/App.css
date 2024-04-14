@@ -1,38 +1,90 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+/* Center align all content */
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url('C:\Users\Anvesha\Desktop\quiz.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-family: Arial, sans-serif;
+    color: #f3f0f4; /* General font color changed to white for better visibility */
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  
+  /* Style the heading */
+  h1 {
+    font-size: 48px;
+    text-align: center;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   }
-  to {
-    transform: rotate(360deg);
+  
+  /* Style the subheading */
+  h2 {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   }
-}
+  
+  /* Style the questions */
+  p {
+    font-size: 18px;
+    margin-bottom: 10px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  }
+  
+  /* Style the radio buttons and labels */
+  input[type="radio"] {
+    margin-right: 5px;
+    accent-color: #a676d6;
+  }
+  
+  /* Style the submit button */
+  button {
+    background-color: #a676d6;
+    color: #FFF;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    margin-top: 20px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  /* Hover effect for the submit button */
+  button:hover {
+    background-color: #0056b3;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+  }
+  
+  /* Style the answer feedback */
+  p#ans1,
+  p#ans2,
+  p#ans3,
+  p#ans4 {
+    font-size: 16px;
+    margin-top: 10px;
+  }
+  
+  /* Style the correct answer feedback */
+  p#ans1 span.correct,
+  p#ans2 span.correct,
+  p#ans3 span.correct,
+  p#ans4 span.correct {
+    color: #008000;
+    font-weight: bold;
+  }
+  
+  /* Style the incorrect answer feedback */
+  p#ans1 span.incorrect,
+  p#ans2 span.incorrect,
+  p#ans3 span.incorrect,
+  p#ans4 span.incorrect {
+    color: #ff0000;
+    font-weight: bold;
+  }
